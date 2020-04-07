@@ -11,41 +11,48 @@
 
 <body>
 <div id="bg-drkgrey"> 
-    <header class="wrapper"> 
-        <div class="row"> 
-			<img src="img/icon-logo.png" alt="">
-            <nav>
-                <ul>
-                    <li><a href="#home"></a>Home</li>
-                    <li><a href="#story"></a>Our Story</li>
-                    <li><a href="#breeds"></a>Breeds</li>
-                    <li><a href="#subscribe"></a>Connect</li>
-                </ul>
-            </nav>
-            <div>
-                <ul>
-                    <li><a href="#"><i class="fas fa-search"></i><span>Search</span></a></li>
-                    <li><a href="#"><i class="fas fa-shopping-cart"></i><span>Your Cart</span></a></li>                    
-                </ul>
+    <header>
+		<div class="wrapper">
+            <div class="row"> 
+                <img src="img/icon-logo.png" alt="">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#breeds">Breeds</a></li>
+                        <li><a href="#subscribe">Connect</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-search"></i><span>Search</span></a></li>
+                        <li><a href="#">My Cart<i class="fas fa-shopping-cart"></i></a></li>                    
+                    </ul>
+                </div>
             </div>
-        </div>
+		</div>	
         <div  id="home">
-            <h1>Dogs &amp; Unicorns</h1>
-            <p>Bringing you the paw since 1996.</p>
-            <ul>
-                <li><a href="">Read More</a></li>
-                <li><a href=""><i class="fas fa-paw"></i>Paw Up</a></li>
-            </ul>
-        </div>
-        <nav id="fixed">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#story">The Story</a></li>
-                <li><a href="#breeds">Breeds</a></li>
-                <li><a href="#product">Whistle</a></li>
-                <li><a href="#subscribe">Subscribe</a></li>
-            </ul>
-        </nav>
+			 <!-- I THIS THIS IS WHERE A WRAPPER GOES BECAUSE THE PHOTO COVERS, RIGHT? IS MY TEXT WONKY BECAUSE OF THE RELATIVE ID?  -->
+			<div class="wrapper">
+                <div>
+                    <h1>Dogs &amp; Unicorns</h1>
+                    <p>Bringing you the paw since 1996.</p>                	
+                <ul>
+                    <li><a href="">Read More</a></li>
+                    <li><a href=""><i class="fas fa-paw"></i>Paw Up</a></li>
+                </ul>
+            	</div>
+                <nav id="relative">
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-circle"></i><span>Home</span></a></li>
+                        <li><a href="#story"><i class="fas fa-circle"></i><span>The Story</span></a></li>
+                        <li><a href="#breeds"><i class="fas fa-circle"></i><span>Breeds</span></a></li>
+                        <li><a href="#product"><i class="fas fa-circle"></i><span>Whistle</span></a></li>
+                        <li><a href="#subscribe"><i class="fas fa-circle"></i><span>Subscribe</span></a></li>
+                    </ul>
+                </nav>
+			</div>
+		</div>	
     </header>
 </div>
 <section class="wrapper row" id="story">
@@ -74,7 +81,7 @@
         <a href="#slide-2">2</a> 
         <a href="#slide-3">3</a>
         <div class="slider">
-            <div class="slide bg-weimaraner" id="slide-1">
+            <div class="slide slide-weimaraner" id="slide-1">
                 <div class="row">
                 <div>
                     <p>1</p>
@@ -100,12 +107,12 @@
                 </div>
                 <p><i class="fas fa-paw"></i>Paw Up</p>
                 </div>
-                <a href="#bg-last-dog"><i class="fas fa-arrow-left"></i></a>	
-                <a href="#bg-black-lab"><i class="fas fa-arrow-right"></i></a>				
+                <a href="#slide-golden"><i class="fas fa-arrow-left"></i></a>	
+                <a href="#slide-black-lab"><i class="fas fa-arrow-right"></i></a>				
             </div>
 
             </div>
-            <div class="slide bg-black-lab" id="slide-2">
+            <div class="slide slide-black-lab" id="slide-2">
                 <div class="row">
                     <div>
                         <p>1</p>
@@ -132,13 +139,13 @@
                     <p><i class="fas fa-paw"></i>Paw Up</p>
                     </div>
                     <div>
-                     <a href="#bg-last-dog"><i class="fas fa-arrow-right"></i></a>
-                     <a href="#bg-weimaraner"><i class="fas fa-arrow-left"></i></a>
+                     <a href="#slide-golden"><i class="fas fa-arrow-right"></i></a>
+                     <a href="#slide-weimaraner"><i class="fas fa-arrow-left"></i></a>
                     </div>	
                 </div>
 
             </div>
-            <div class="slide bg-last-dog" id="slide-3">
+            <div class="slide slide-golden" id="slide-3">
                 <div class="row">
                     <div>
                         <p>1</p>
@@ -146,8 +153,8 @@
                     <div>
                     <div>
                         <header>
-                            <h2>Dog I don't remember right now</h2>
-                            <p>I'm sure it's fine</p>
+                            <h2>Golden Retriever</h2>
+                            <p>The Goodest</p>
                         </header>
                         <p>Wow very biscit corgo pupperino thicc ruff, vvv ruff boofers. Heck snoot extremely cuuuuuute such treat, smol borking doggo with a long snoot for pats doggo. Lotsa pats aqua doggo very taste wow heckin doing me a frighten, tungg pupperino wrinkler, the neighborhood pupper long water shoob much ruin diet. Boof much ruin diet big ol pupper wow very biscit doggo many pats, big ol pupper long water shoob you are doing me a frighten yapper. Boof boofers long woofer aqua doggo maximum borkdrive shoober doge, puggorino porgo very jealous pupper pats.</p>
                     </div>				
@@ -165,8 +172,8 @@
                     <p><i class="fas fa-paw"></i>Paw Up</p>
                     </div>
                     <div>
-                        <a href="#bg-weimaraner"><i class="fas fa-arrow-right"></i></a>
-                        <a href="#bg-black-lab"><i class="fas fa-arrow-left"></i></a>
+                        <a href="#slide-weimaraner"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#slide-black-lab"><i class="fas fa-arrow-left"></i></a>
                     </div>
 
                 </div>        
