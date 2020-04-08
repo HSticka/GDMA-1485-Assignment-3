@@ -3,18 +3,22 @@
 <head>
 <meta charset="utf-8">
 <title>Dogs &amp; Unicorns</title>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/normalize.css">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<script src="https://kit.fontawesome.com/54d2f38aef.js" crossorigin="anonymous"></script>
+	
+	
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://kit.fontawesome.com/54d2f38aef.js" crossorigin="anonymous"></script>
+	
+	
 </head>
 
 <body>
-<div id="bg-drkgrey"> 
-    <header>
+ 
+    <header id="bg-hero">
 		<div class="wrapper">
             <div class="row"> 
-                <img src="img/icon-logo.png" alt="">
+                <img src="img/icon-logo.png" alt="Dogs and Unicorns">
                 <nav>
                     <ul>
                         <li><a href="#home">Home</a></li>
@@ -31,8 +35,7 @@
                 </div>
             </div>
 		</div>	
-        <div  id="home">
-			 <!-- I THIS THIS IS WHERE A WRAPPER GOES BECAUSE THE PHOTO COVERS, RIGHT? IS MY TEXT WONKY BECAUSE OF THE RELATIVE ID?  -->
+        <div>			
 			<div class="wrapper">
                 <div>
                     <h1>Dogs &amp; Unicorns</h1>
@@ -42,7 +45,7 @@
                     <li><a href=""><i class="fas fa-paw"></i>Paw Up</a></li>
                 </ul>
             	</div>
-                <nav id="relative">
+                <nav id="fixed">
                     <ul>
                         <li><a href="#home"><i class="fas fa-circle"></i><span>Home</span></a></li>
                         <li><a href="#story"><i class="fas fa-circle"></i><span>The Story</span></a></li>
@@ -54,7 +57,7 @@
 			</div>
 		</div>	
     </header>
-</div>
+
 <section class="wrapper row" id="story">
 	<img src="img/story-dog-head.jpg" alt="">
     <div>
@@ -71,60 +74,25 @@
             </div>
         </div>
     </div>
-</section>
+</section>    
     
-    
-    
-<section class="wrapper" id="breeds">    
     <div class="slide-wrap">  
-        <a href="#slide-1">1</a> 
-        <a href="#slide-2">2</a> 
-        <a href="#slide-3">3</a>
         <div class="slider">
-            <div class="slide slide-weimaraner" id="slide-1">
-                <div class="row">
-                <div>
-                    <p>1</p>
-                </div>
-                <div>
-                <div>
-                    <header>
-                        <h2>Weimaraner</h2>
-                        <p>The Silver Runner</p>
-                    </header>
-                    <p>Wow very biscit corgo pupperino thicc ruff, vvv ruff boofers. Heck snoot extremely cuuuuuute such treat, smol borking doggo with a long snoot for pats doggo. Lotsa pats aqua doggo very taste wow heckin doing me a frighten, tungg pupperino wrinkler, the neighborhood pupper long water shoob much ruin diet. Boof much ruin diet big ol pupper wow very biscit doggo many pats, big ol pupper long water shoob you are doing me a frighten yapper. Boof boofers long woofer aqua doggo maximum borkdrive shoober doge, puggorino porgo very jealous pupper pats.</p>
-                </div>	
-                <div class="row">
-                    <div class="col-1-6">
-                        <p>Energy</p>
-                    </div>
-                    <div class="col-1-6">
-                        <p>Grooming</p>
-                    </div>
-                    <div class="col-1-6">
-                        <p>Agility</p>
-                    </div>
-                </div>
-                <p><i class="fas fa-paw"></i>Paw Up</p>
-                </div>
-                <a href="#slide-golden"><i class="fas fa-arrow-left"></i></a>	
-                <a href="#slide-black-lab"><i class="fas fa-arrow-right"></i></a>				
-            </div>
-
-            </div>
-            <div class="slide slide-black-lab" id="slide-2">
-                <div class="row">
+			
+			<section>
+                <div class="slide" id="slide-weimaraner">
+                    <div class="wrapper row">
                     <div>
                         <p>1</p>
                     </div>
                     <div>
                     <div>
                         <header>
-                            <h2>Black Lab</h2>
-                            <p>Old Faithful</p>
+                            <h2>Weimaraner</h2>
+                            <p>The Silver Runner</p>
                         </header>
                         <p>Wow very biscit corgo pupperino thicc ruff, vvv ruff boofers. Heck snoot extremely cuuuuuute such treat, smol borking doggo with a long snoot for pats doggo. Lotsa pats aqua doggo very taste wow heckin doing me a frighten, tungg pupperino wrinkler, the neighborhood pupper long water shoob much ruin diet. Boof much ruin diet big ol pupper wow very biscit doggo many pats, big ol pupper long water shoob you are doing me a frighten yapper. Boof boofers long woofer aqua doggo maximum borkdrive shoober doge, puggorino porgo very jealous pupper pats.</p>
-                    </div>				
+                    </div>	
                     <div class="row">
                         <div class="col-1-6">
                             <p>Energy</p>
@@ -136,94 +104,144 @@
                             <p>Agility</p>
                         </div>
                     </div>
-                    <p><i class="fas fa-paw"></i>Paw Up</p>
+                        <p><i class="fas fa-paw"></i>Paw Up</p>
+                    </div>
+						<ol>
+                            <li><a href="#slide-golden"><i class="fas fa-arrow-left"></i></a></li>	
+                            <li><a href="#slide-black-lab"><i class="fas fa-arrow-right"></i></a></li>
+						</ol>	
+                	</div>
+
+                </div>
+			</section>
+			
+			<section>
+            <div class="slide" id="slide-black-lab">
+                <div class="wrapper row">
+                    <div>
+                        <p>2</p>
                     </div>
                     <div>
-                     <a href="#slide-golden"><i class="fas fa-arrow-right"></i></a>
-                     <a href="#slide-weimaraner"><i class="fas fa-arrow-left"></i></a>
+                        <div>
+                            <header>
+                                <h2>Black Lab</h2>
+                                <p>Old Faithful</p>
+                            </header>
+                            <p>Wow very biscit corgo pupperino thicc ruff, vvv ruff boofers. Heck snoot extremely cuuuuuute such treat, smol borking doggo with a long snoot for pats doggo. Lotsa pats aqua doggo very taste wow heckin doing me a frighten, tungg pupperino wrinkler, the neighborhood pupper long water shoob much ruin diet. Boof much ruin diet big ol pupper wow very biscit doggo many pats, big ol pupper long water shoob you are doing me a frighten yapper. Boof boofers long woofer aqua doggo maximum borkdrive shoober doge, puggorino porgo very jealous pupper pats.</p>
+                        </div>				
+                        <div class="row">
+                            <div class="col-1-6">
+                                <p>Energy</p>
+                            </div>
+                            <div class="col-1-6">
+                                <p>Grooming</p>
+                            </div>
+                            <div class="col-1-6">
+                                <p>Agility</p>
+                            </div>
+                        </div>
+                        <p><i class="fas fa-paw"></i>Paw Up</p>
+                    </div>
+                    <div>
+						<ol>
+					 		<li><a href="#slide-weimaraner"><i class="fas fa-arrow-left"></i></a></li>	
+                     		<li><a href="#slide-golden"><i class="fas fa-arrow-right"></i></a></li>
+						</ol>	
                     </div>	
                 </div>
-
             </div>
-            <div class="slide slide-golden" id="slide-3">
-                <div class="row">
-                    <div>
-                        <p>1</p>
-                    </div>
-                    <div>
-                    <div>
-                        <header>
-                            <h2>Golden Retriever</h2>
-                            <p>The Goodest</p>
-                        </header>
-                        <p>Wow very biscit corgo pupperino thicc ruff, vvv ruff boofers. Heck snoot extremely cuuuuuute such treat, smol borking doggo with a long snoot for pats doggo. Lotsa pats aqua doggo very taste wow heckin doing me a frighten, tungg pupperino wrinkler, the neighborhood pupper long water shoob much ruin diet. Boof much ruin diet big ol pupper wow very biscit doggo many pats, big ol pupper long water shoob you are doing me a frighten yapper. Boof boofers long woofer aqua doggo maximum borkdrive shoober doge, puggorino porgo very jealous pupper pats.</p>
-                    </div>				
-                    <div class="row">
-                        <div class="col-1-6">
-                            <p>Energy</p>
+			</section>
+			
+			<section>
+                <div class="slide" id="slide-golden">
+                    <div class="wrapper row">
+                        <div>
+                            <p>3</p>
                         </div>
-                        <div class="col-1-6">
-                            <p>Grooming</p>
+                        <div>
+                            <div>
+                                <header>
+                                    <h2>Golden Retriever</h2>
+                                    <p>The Goodest</p>
+                                </header>
+                                <p>Wow very biscit corgo pupperino thicc ruff, vvv ruff boofers. Heck snoot extremely cuuuuuute such treat, smol borking doggo with a long snoot for pats doggo. Lotsa pats aqua doggo very taste wow heckin doing me a frighten, tungg pupperino wrinkler, the neighborhood pupper long water shoob much ruin diet. Boof much ruin diet big ol pupper wow very biscit doggo many pats, big ol pupper long water shoob you are doing me a frighten yapper. Boof boofers long woofer aqua doggo maximum borkdrive shoober doge, puggorino porgo very jealous pupper pats.</p>
+                            </div>				
+                            <div class="row">
+                                <div class="col-1-6">
+                                    <p>Energy</p>
+                                </div>
+                                <div class="col-1-6">
+                                    <p>Grooming</p>
+                                </div>
+                                <div class="col-1-6">
+                                    <p>Agility</p>
+                                </div>
+                            </div>
+                            <p><i class="fas fa-paw"></i>Paw Up</p>
                         </div>
-                        <div class="col-1-6">
-                            <p>Agility</p>
-                        </div>
-                    </div>
-                    <p><i class="fas fa-paw"></i>Paw Up</p>
-                    </div>
                     <div>
-                        <a href="#slide-weimaraner"><i class="fas fa-arrow-right"></i></a>
-                        <a href="#slide-black-lab"><i class="fas fa-arrow-left"></i></a>
+						<ol>
+                        	<li><a href="#slide-black-lab"><i class="fas fa-arrow-left"></i></a></li>
+							<li><a href="#slide-weimaraner"><i class="fas fa-arrow-right"></i></a></li>
+						</ol>	
                     </div>
 
                 </div>        
               </div>
+			</section>	
         </div>
     </div>
-</section>   
+   
     
     
     
 <section id="product">
-    <div class="wrapper">
-        <div class="row">
-            <div>
-                <header>
-                    <h2><img src="img/icon-whistle.jpg" alt="">Whistle</h2>
-                </header>
-                <p>Doge corgo shoober bork what a nice floof, length boy dat tungg tho. Long woofer floofs he made many woofs heck, ur givin me a spook big ol pupper. Heckin long doggo vvv boofers, puggo. Snoot shoober wrinkler boof pupperino, mlem shoober. Heckin good boys and girls heck long water shoob heckin good boys and girls very good spot, smol heckin.</p>
-                <img src="img/watch.jpg" alt="photo of product">
-                <div class="row">
-                    <div class="col-2-2">
-                        <p>$62.95</p>
-                        <fieldset>
-                            <legend>Color Options</legend>
-                            <form>
-                                <label for="black">Black</label>
-                                <input type="radio" name="color-options" value="black" id="black">
+    
+        <div class="wrapper row">
+			<div class="col-1-2">
+				<img src="img/puppy.jpg" alt="">
+			</div>
+			<div class="col-1-2">
+                <div>
+                    <header>
+                        <h2><img src="img/icon-whistle.jpg" alt="">Whistle</h2>
+                    </header>
+                    <p>Doge corgo shoober bork what a nice floof, length boy dat tungg tho. Long woofer floofs he made many woofs heck, ur givin me a spook big ol pupper. Heckin long doggo vvv boofers, puggo. Snoot shoober wrinkler boof pupperino, mlem shoober. Heckin good boys and girls heck long water shoob heckin good boys and girls very good spot, smol heckin.</p>
+                    <img src="img/watch.jpg" alt="photo of product">
+                    <div class="row">
+                        <div class="col-2-2">
+                            <p>$62.95</p>
 
-                                <label for="grey">Grey</label>
-                                <input type="radio" name="color-options" value="grey" id="grey">
+                                <form>
+                                    <fieldset>
+                                        <legend>Color Options</legend>
+                                        <label for="black">Black</label>
+                                        <input type="radio" name="color-options" value="black" id="black">
 
-                                <label for="lilac">Lilac</label>
-                                <input type="radio" name="color-options" value="lilac" id="lilac">
-                            </form>
-                        </fieldset>	 
+                                        <label for="grey">Grey</label>
+                                        <input type="radio" name="color-options" value="grey" id="grey">
+
+                                        <label for="lilac">Lilac</label>
+                                        <input type="radio" name="color-options" value="lilac" id="lilac">
+                                    </fieldset>	
+                                </form>
+
+                        </div>
+                        <div class="col-2-2 btn-paw">
+                            <p><img src="TINY PAW" alt="">Paw Up</p>
+                        </div>
                     </div>
-                    <div class="col-2-2 btn-paw">
-                        <p><img src="TINY PAW" alt="">Paw Up</p>
-                    </div>
-                </div>
-            </div>
+                      </div>
+			</div>	
         </div>
-    </div>
+    
 </section>
+	
+	
 <footer id="subscribe">
     <div class="wrapper"> <img src="img/icon-logo.png" alt="">
         <form>
-            <caption>
-            Subscribe
-            </caption>
+            <headline>Subscribe</headline>
             <p>Your weekly updates on the run</p>
             <div class="row">
                 <div>
@@ -234,12 +252,10 @@
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="E-mail">
                 </div>
-            </div>
-            <div>
-				<a href="#">Submit</a>
-			</div>
+            </div>            
+				<p><a href="#"><img src="TINY PAW" alt="">Paw Up</a></p>			
         </form>
-        <p><img src="TINY PAW" alt="">Paw Up</p>
+        
         <div class="row">
             <div class="col-1-5">
                 <p><img src="img/icon-logo.png" alt="">Dogs &amp; Unicorns Ltd</p>
@@ -260,7 +276,12 @@
         </div>
     </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
-<script src="js/function.js"></script>
+	
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="js/function.js"></script>
+	
+	
+	
 </body>
 </html>

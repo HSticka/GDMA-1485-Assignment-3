@@ -51,8 +51,7 @@
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-	font-family: 'Crimson Text', serif;
-	
+	font-family: 'Crimson Text', serif;	
 	color: #fff;
 }
 
@@ -81,10 +80,7 @@ h1, h2 {
 	font-size: 40px;
 }
 
-#home > div {
-	
-	margin: 220px 650px 300px 10px; /*THIS ISN'T WORKING AND I DON'T KNOW WHY */
-}
+
 
 
 
@@ -112,27 +108,51 @@ h1, h2 {
 6.0 COMPONENTS
 -------------------------------------------------------------- */
 
-/* -- HEADER -- */ 
-
-#bg-drkgrey {
-	background-color: #373333;
+ 
+/*-- NAV -- */
+span {
+	display: none;
 }
 
-#bg-drkgrey img, .row nav, #story img, .col-1-3 { 
+/* -- HEADER -- */
+#bg-hero img, .row nav, #story img, .col-1-3, .col-1-2 { 
 	float: left;
 }
 
-#bg-drkgrey .row div, #story div .col-1-3:last-child {
+#bg-hero .row div, #story div .col-1-3:last-child, .col-1-2:last-child {
 	float: right;
 }
 
-#bg-drkgrey img {
+#bg-hero img {
 	margin-top: 20px;
-	resize: both;
+	
 	width: 30px;
 }
 
+#bg-hero {
+	background: url("../img/bg-hero.jpg") no-repeat center;
+	
+}
 
+#bg-hero, .slide, #subscribe { /* is .slide even necessary here?*/
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	-mozilla-background-size: cover;
+	background-size: cover;
+}
+
+#fixed {
+	position: fixed;
+	top: 50%;
+	right: 0px;	
+}
+
+#fixed li {
+	display: block;	
+}
+
+/* STORY */
 #story h2, #product h2, #story p, #product p {
 	color: #373333;
 }
@@ -149,47 +169,52 @@ h1, h2 {
 	width: 300px;
 }
 
-#home {
-	background: url("../img/bg-hero.jpg") no-repeat center;
-	
-}
 
-#home, .slide-black-lab, .slide-golden, .slide-weimaraner { /* CAN THIS JUST BE .SLIDE? ALSO, I HAVE NO CLUE WHY THE CAROUSEL IS BROKEN. THE TEXT IS THERE IN WHITE, BUT THE IMAGES ARE BAFFLING ME and idk why it's stacked all weird*/
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-	-ms-background-size: cover;
-	-mozilla-background-size: cover;
-	background-size: cover;
-}
 
-#relative {
-	position: relative;
-	top: -200px;
-	left: 1300px;	
-}
+/* SLIDES */
 
-#relative li {
-	display: block;	
-}
-
-span {
-	display: none;
-}
-
-#slide-1 {
+#slide-weimaraner {
 	background: url("../img/slide-weimaraner.jpg") no-repeat center;
 }
 
-#slide-2 {
+#slide-black-lab {
 	background: url("../img/slide-black_lab.jpg") no-repeat center;
 }
 
-#slide-3 {
+#slide-golden {
 	background: url("../img/slide-golden_retriever.jpg") no-repeat center;
 }
-/*-- NAV -- */
 
-#subscribe {
+.slides { /* DOES THIS NEED -WEBKIT-? */ 
+  scroll-behavior: smooth;
+}
+
+.slides > div {
+  
+  scroll-snap-align: start;
+}
+
+/* I don't know what I'm missing.... I tried setting 100% width and that wasn't it. Here is my link: https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/ */
+.slider {
+  width: 1170px;
+  height: 800px;
+  display: flex;
+  overflow-x: auto;
+}
+.slide {
+  width: 300px;
+  flex-shrink: 0;
+  height: 100%;
+}
+/* PRODUCT */
+
+.col-1-2 {
+	width: 450px; /* I need to resize this and set the color to white in Ps */
+}
+
+/* FOOTER */
+
+#subscribe { /*what am I doing wrong here? I'm lost. It's the same as my bg hero? */
 	background: url("../img/bg-trees.jpg") no-repeat cover;
 }
 
