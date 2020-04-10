@@ -81,14 +81,32 @@ p, li {
 h1, h2 {
 	font-weight: 400;
 	font-size: 50px;
-	margin: 30px 0 0px;
+	margin: 50px 0 0px;
 }
 
 
 
 
 
-/* -- FORMS -- */ 
+/* -- FORMS -- */
+
+input {
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #737373;
+	width: 300px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 30px;
+}
+
+headline {
+	font-size: 36px;
+}
+
+headline + p {
+	font-family: 'Montserrat', sans-serif;
+	color: #737373;
+}
 
 
 /*--------------------------------------------------------------
@@ -114,7 +132,7 @@ h1, h2 {
 
  
 /*-- NAV -- */
-span {
+span, label, #product legend {
 	display: none;
 }
 
@@ -149,7 +167,23 @@ h1 + p, h2 + p {
 	margin-bottom: 45px;
 }
 
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
+#bouncein {
+  animation: bounceIn 2s;
+}
 
 
 
@@ -164,7 +198,7 @@ h1 + p, h2 + p {
 }
 
 .fa-circle {
-	color: #373333;
+	color: #6B0204;
 }
 
 /* STORY */
@@ -190,7 +224,7 @@ h1 + p, h2 + p {
 	right: -230px;
 }
 
-#story header p, .col-1-3:first-child p::first-letter {
+#story header p, .col-1-3:first-child p::first-letter, .slide header > p {
 	color: #DBC320;
 }
 
@@ -243,7 +277,11 @@ h1 + p, h2 + p {
 }
 
 .attributes {
-	width: 500px;
+	width: 500px;	
+}
+
+.attributes li {
+	font-family: 'Montserrat', sans-serif;
 }
 
 .arrows {
@@ -258,7 +296,10 @@ h1 + p, h2 + p {
 	width: 500px;
 }
 
-
+.number p {
+	color: #767676;
+	font-size: 30px;	
+}
 
 /* PRODUCT */
 
@@ -266,25 +307,38 @@ h1 + p, h2 + p {
 	width: 450px; 
 }
 
+
 #product .relative {
 	position: relative;
 	bottom: 100%;
 	right: -200px;
 }
 
-.col-2-2 p {
+.col-2-2:first-child p  {
 	font-size: 36px;
 }
 
-#product legend {
-	display: none;
-}
+
 
 fieldset {
 	border: none;
 }
 
-/* How do I style buttons? */
+#moon {
+	position: absolute;
+	top: -200px;
+	right: 650px;
+	z-index: -15;
+	width: 600px;
+}
+
+#puppy {
+	position:absolute;
+	bottom: 0;
+	right: 550px;
+}
+
+/* How do I style radio buttons? */
 
 
 /* FOOTER */
@@ -309,12 +363,34 @@ fieldset {
 	padding-right: 350px;
 }
 	
-
+#subscribe div img {
+	margin: 30px 0;
+}
 /*-- BUTTONS -- */
 
+.btn {
+    background-color: #6C6666; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+	margin: 75px 12px 60px;
+	border-radius: 50px;
+}
+
+.btn:hover{
+	background-color: #E58485;
+	color:#270101;
+}
+
+a:hover, .fa-circle:hover {
+	color: #E58485;
+} 
 /*--------------------------------------------------------------
 7.0 UTILITIES 
 -------------------------------------------------------------- */
 
 /* -- FORMS -- */ 
+
+
 
