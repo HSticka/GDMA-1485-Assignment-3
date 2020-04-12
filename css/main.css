@@ -46,7 +46,7 @@
 -------------------------------------------------------------- */
 
 * {
-	-webkit-box-sizing: border-box;
+	-webkit-box-sizing: border-box; /* my vendor prefixes won't validate and idk why. it's not done this before. I truly did validate, I just don't know what I've done differently? */
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -66,7 +66,7 @@ font-family: 'Montserrat', sans-serif; */
 -------------------------------------------------------------- */
 a {
 	text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
+	
 }
 
 li {
@@ -94,8 +94,6 @@ input {
 	background-color: transparent;
 	border: none;
 	border-bottom: 2px solid #737373;
-	width: 300px;
-	font-family: 'Montserrat', sans-serif;
 	margin-top: 30px;
 }
 
@@ -104,11 +102,13 @@ headline {
 }
 
 headline + p {
-	font-family: 'Montserrat', sans-serif;
+	
 	color: #737373;
 }
 
-
+input, .col-1-3 {
+	width: 300px;
+}
 /*--------------------------------------------------------------
 5.0 OBJECTS
 -------------------------------------------------------------- */
@@ -141,7 +141,7 @@ span, label, #product legend {
 }
 
 #nav li, #nav + div li {
-	padding-right: 30px;	
+	margin-right: 30px;	
 }
 
 /* -- HEADER -- */
@@ -159,11 +159,11 @@ span, label, #product legend {
 }
 
 #bg-hero > div:last-child {
-	padding: 100px 0 300px;
+	padding: 100px 0 300px; /* When I change this to margin, it breaks my wrapper, so I'm leaving it as padding because idk why */
 }
 
 h1 + p, h2 + p {
-	font: 400 16px 'Montserrat', sans-serif;
+	font: 400 16px;
 	margin-bottom: 45px;
 }
 
@@ -198,7 +198,7 @@ h1 + p, h2 + p {
 }
 
 .fa-circle {
-	color: #6B0204;
+	color: #E80A0E;
 }
 
 /* STORY */
@@ -214,7 +214,7 @@ h1 + p, h2 + p {
 	width: 700px;
 }
 
-.col-1-3 {
+ {
 	width: 300px;
 }
 
@@ -232,9 +232,7 @@ h1 + p, h2 + p {
 	  float: left;      
       font-size: 75px;
       line-height: 60px;
-      padding-top: 4px;
-      padding-right: 8px;
-      padding-left: 3px;
+	  padding: 4px 8px 0 3px;
 }
 
 
@@ -254,6 +252,7 @@ h1 + p, h2 + p {
 	background: url("../img/slide-golden_retriever.jpg") no-repeat center;
 }
 
+
 .slides { 
   scroll-behavior: smooth;
 }
@@ -263,12 +262,12 @@ h1 + p, h2 + p {
   scroll-snap-align: start;
 }
 
-/*still wrong. booooooo I tried setting 100% width and that wasn't it. Here is my link: https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/ */
+
 .slider {
   width: 100%;
   height: 800px;
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 .slide {
   width: 100%;
@@ -276,11 +275,9 @@ h1 + p, h2 + p {
   height: 100%;
 }
 
-.attributes {
-	width: 500px;	
-}
 
-.attributes li {
+
+.attributes li, a, input, headline + p, h1 + p, h2 + p {
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -292,7 +289,7 @@ h1 + p, h2 + p {
 	padding-right: 40px;
 }
 
-.slide p {
+.slide > div, .attributes, .col-1-2 {
 	width: 500px;
 }
 
@@ -303,42 +300,40 @@ h1 + p, h2 + p {
 
 /* PRODUCT */
 
-.col-1-2 {
-	width: 450px; 
-}
+
 
 
 #product .relative {
 	position: relative;
-	bottom: 100%;
-	right: -200px;
+	top: 0;
+	left: 0;
 }
 
-.col-2-2:first-child p  {
+.col-2-2 p:first-child  {
 	font-size: 36px;
 }
 
 
 
 fieldset {
-	border: none;
+	border: none;	
 }
 
 #moon {
-	position: absolute;
+	position: absolute; /*I don't understand how this is an angled object when it is a globe on the mockup? Also, I do not understand how to make one. This was something I was going to ask in class when we were shut down. */
 	top: -200px;
 	right: 650px;
 	z-index: -15;
-	width: 600px;
+	width: 800px;
 }
 
 #puppy {
-	position:absolute;
+	position:absolute; /* I don't understand why this should be margin. That would require guesswork on where the bottom of the section is. I truly believe that positioning is the only way to make this set exactly where it needs to go, so if there are other changes to the site, text or product, and the section changes, this would remain in the place where it belongs. I also chose this layout for these two images because in the mockup they are layered on top of one another. */
 	bottom: 0;
 	right: 550px;
 }
 
-/* How do I style radio buttons? */
+
 
 
 /* FOOTER */
@@ -347,7 +342,7 @@ fieldset {
 	background: url("../img/bg-trees.jpg") no-repeat;
 }
 
-#bg-hero, #subscribe { 
+#bg-hero, #subscribe, #slide-black-lab, #slide-golden, #slide-weimaraner { 
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 	-ms-background-size: cover;
@@ -357,10 +352,15 @@ fieldset {
 
 #subscribe div, #subscribe form {
 	text-align: center;
+	margin-bottom: 35px;
 }
 
 .col-1-5:first-child {
-	padding-right: 350px;
+	margin-right: 300px;
+}
+
+.col-1-5 li {
+	margin-right: 25px;
 }
 	
 #subscribe div img {
@@ -371,7 +371,7 @@ fieldset {
 .btn {
     background-color: #6C6666; 
     border: none;
-    color: white;
+    color: #fff;
     padding: 15px 32px;
     text-align: center;
 	margin: 75px 12px 60px;
